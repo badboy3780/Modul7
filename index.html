@@ -5,7 +5,9 @@
 	<title>Studing</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&amp;subset=vietnamese" rel="stylesheet">
 	<script src="js.js" defer></script>
 </head>
 <body>
@@ -14,7 +16,7 @@
         <nav>
             <ul>
                 <li>
-                   <span class="logo"><a href="#">Golden</a></span>
+                   <span class="logo"><a href="#"><img src="img/logo.jpg"></a></span>
                 </li>
                 <li class="menu-bar">Home</li>
                 <li class="menu-bar">Services</li>
@@ -26,11 +28,60 @@
     </header>
     
     <section class="site-info">
+        
         <div class="section-title">
-            <h2 class="title">Service</h2>
+            <h2 class="title">Services</h2>
             <p class="about">Proin iaculis purus consequat sem cure</p>
         </div> 
+        
+        <article>
+            <div class="card">
+                <a href="#" class="img-basket"></a>
+                <h2 class="title-card">E-Commerce</h2>
+                <p class="info-card">Proin iaculis purus consequat sem cure 
+digni ssim. Donec porttitora entum suscipit 
+aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+            
+            <div class="card">
+                <a href="#" class="img-laptop"></a>
+                <h2 class="title-card">Responsive Web</h2>
+                <p class="info-card">Proin iaculis purus consequat sem cure 
+digni ssim. Donec porttitora entum suscipit 
+aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+            
+            <div class="card">
+                <a href="#" class="img-locked"></a>
+                <h2 class="title-card">Web Security</h2>
+                <p class="info-card">Proin iaculis purus consequat sem cure 
+digni ssim. Donec porttitora entum suscipit 
+aenean rhoncus posuere odio in tincidunt.</p>
+            </div>
+        </article>
+        
     </section>
+    
+    <footer>
+        <div class="wrapper">
+            
+            <div class="section-title">
+                <h2 class="title-contact">Services</h2>
+                <p class="about">Proin iaculis purus consequat sem cure</p>
+            </div> 
+             <form class="contact-form" action="#" method="GET">
+                  <div class="contact-wrapper">
+                      <input type="text" placeholder="Your Name *" name="user-name" required>
+                      <input type="email" placeholder="Your E-mail *" name="user-email" required>
+                      <input type="text" placeholder="Subject" name="subject">
+                      <textarea name="user-message" placeholder="Your Message *" required></textarea>
+                  </div>
+              <button type="submit">Send Message</button>
+
+            </form>
+            
+        </div>
+    </footer>
     
 </body>
 </html>
