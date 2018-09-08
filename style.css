@@ -232,6 +232,11 @@ input[type='email']:valid, input[name='name']:valid {
     background-color: #84D77E;
 }
 
+.menu-bar:hover{
+    
+    color: rgba(254, 209, 54, 1);
+    
+}
 
 @font-face {
   font-family: 'Montserrat';
