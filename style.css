@@ -1,0 +1,44 @@
+header{
+
+    padding-top: 47px;
+    margin: auto;
+    width: 970px;
+    padding-bottom: 47px;
+    margin-bottom: 100px;
+}
+
+.logo{
+    float: left;
+    margin-right: 370px;
+    font-style: normal;
+    text-decoration: none;
+    
+}
+
+.menu-bar{
+    float: left;
+    margin-right: 40px;
+    text-transform: uppercase;
+}
+
+.site-info{
+    width: 970px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.section-title{
+    text-align: center;
+    
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 24px;
+}
+
+.about{
+    color: #989898;
+}
