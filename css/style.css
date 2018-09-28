@@ -1,24 +1,32 @@
 header{
-
-    
     margin: auto;
     width: 970px;
     padding-bottom: 47px;
     margin-bottom: 160px;
+    display: flex;
 }
 
 .logo{
+    
     padding-top: 30px;
-    float: left;
     margin-right: 330px;
     font-style: normal;
     text-decoration: none;
     cursor: pointer;
-    
+}
+
+
+ol{
+     display: flex; 
+}
+
+a{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .menu-bar{
-    float: left;
     margin-right: 40px;
     text-transform: uppercase;
     padding-top: 55px;
@@ -32,13 +40,11 @@ header{
     width: 970px;
     margin: auto;
     text-align: center;
-    
 }
 
 .section-title{
     text-align: center;
     margin-bottom: 120px;
-    
 }
 
 .title{
@@ -47,18 +53,16 @@ header{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 700;
-    
 }
 
 .about{
-    
     color: #777;
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
     font-size: 16px;
 }
 
-article{
+.wrapper-cards{
     width: 970px;
     height: auto;
     margin: auto;
@@ -72,6 +76,11 @@ article{
     width: 310px;
     height: 264px;
     margin-right: 50px;
+}
+
+.card-right{
+    width: 310px;
+    height: 264px;
 }
 
 .title-card{
@@ -91,8 +100,7 @@ article{
     font-size: 15px;
 }
 
-.img-basket{
-    background-image: url(img/Icon-Basket.png);
+.img{
     background-position: center;
     background-repeat: no-repeat;
     display: block;
@@ -104,37 +112,26 @@ article{
     margin-bottom: 28px;
 }
 
+.img-basket{
+    background-image: url(D:\GitHub/Modul7/img/Icon-Basket.png);
+}
+
+
+
 .img-laptop{
-    background-image: url(img/Icon-Laptop.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 68px;
-    height: 68px;
-    border-radius: 40px;
-    border: 2px solid rgba(254, 209, 54, 1);
-    margin-left: 105px;
-    margin-bottom: 28px;
+    background-image: url(D:\GitHub/Modul7/img/Icon-Laptop.png);
+   
 }
 
 .img-locked{
-    background-image: url(img/Icon-Locked.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    width: 68px;
-    height: 68px;
-    border-radius: 40px;
-    border: 2px solid rgba(254, 209, 54, 1);
-    margin-left: 105px;
-    margin-bottom: 28px;
+    background-image: url(D:\GitHub/Modul7/img/Icon-Locked.png);
 }
 
-footer{
+.wrapper-contact-form{
     padding-top: 120px;
     width: 100%;
     height: auto;
-    background-image: url(img/Map%20Image.png);
+    background-image: url(D:\GitHub/Modul7/img/Map%20Image.png);
     background-position: right;
     background-repeat: no-repeat;
     background-attachment: inherit;
@@ -142,7 +139,7 @@ footer{
 }
 
 .wrapper{
-    width: 960px;
+    width: 1065px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -157,11 +154,10 @@ footer{
 }
 
 .contact-form{
-    width: 940px;
+    width: 1000px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .contact-wrapper{
@@ -186,7 +182,6 @@ input{
 }
 
 textarea{
-    
     padding: 20px 18px;
     background-color: #fff;
     border: 1px solid #cccccc;
@@ -197,11 +192,14 @@ textarea{
     margin-left: 30px;
     text-transform: uppercase;
     cursor: pointer;
-    
+}
+
+form{
+    text-align: center;
 }
 
 button{
-    margin-left: 40%;
+    display: inline-block;
     width: 240px;
     height: 66px;
     background-color: #fed136;
@@ -214,56 +212,21 @@ button{
     color: #fff;
     cursor: pointer;
     margin-bottom: 115px;
-    
 }
 
 input[type='email']:invalid, input[name='name']:invalid {
-    box-shadow: 0 0 0 1pt #d61a1a;
-    background-color: #ffdddd;
+    outline: 2px solid #d61a1a;
 }
 
 input[type='email']:default, input[name='name']:default {
     background-color: #fff;
-    border: 1px solid #cccccc;
+    border: 2px solid #cccccc;
 }
 
 input[type='email']:valid, input[name='name']:valid {
-    box-shadow: 0 0 0 1pt #30C725;
-    background-color: #84D77E;
+    outline: 2px solid #30C725;
 }
 
-.menu-bar:hover{
-    
+.menu-bar:hover a{
     color: rgba(254, 209, 54, 1);
-    
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'), url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), url('../fonts/montserrat-v12-latin-regular.woff') format('woff')
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/montserrat-v12-latin-600.woff2') format('woff2'),
-  url('../fonts/montserrat-v12-latin-600.woff') format('woff')
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), url('../fonts/montserrat-v12-latin-700.woff') format('woff')
-}
-
-@font-face {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url('../fonts/roboto-slab-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/roboto-slab-v7-latin-regular.woff') format('woff')
 }
